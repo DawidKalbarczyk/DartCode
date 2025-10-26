@@ -63,8 +63,6 @@ class MyApp extends StatelessWidget {
   };
   @override
   Widget build(BuildContext context) {
-
-    print(user["name"]);
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(),
