@@ -37,13 +37,39 @@ class MyApp extends StatelessWidget {
   int add(int a, int b) {
     return a + b;
   }
-  
+
+
+  // Data Structures
+  List numbers = [1, 2, 3];
+  List<String> fruits = ["Apple", "Banana", "Cherry"];
+  void printNumbers() {
+    for (int i = 0; i < numbers.length; i++) {
+      print(numbers[i]);
+    }
+  }
+  void printFruits() {
+    for (int i = 0; i < fruits.length; i++) {
+      print(fruits[i]);
+    }
+  }
+  // SET: 
+  Set<String> uniqueFruits = {"Apple", "Banana", "Cherry"};
+
+  // MAP:
+  Map user = {
+    "name": "Mitch Koko",
+    "age": 27,
+    "height": 1.75,
+  };
   @override
   Widget build(BuildContext context) {
-    print(add(3, 4));
+
+    print(user["name"]);
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(),
     );
   }
 }
+
+29:20
